@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--Enter a  number:<input type="text" id="n1" /><br />
+    Enter a name:<input type="text" id="t1" />
+    <input type="button" value="Add at Index" onclick="addAtIndex()" />
+    <br />
+    <input type="button" value="Add" onclick="add()" />
+    <input type="button" value="Remove" onclick="removename()" />
+    <div id="d1"></div>
+    <script>
+        var names = ["Rohan", "Fahad", "Raju", "Amol", "Mahesh"];
+        function defaultlist() {
+            var data = "</ol>";
+            for (var i = 0; i < names.length; i++) {
+                data += "<li>" + names[i] + "</li>"
+            }
+            data += "</ol>"
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+        }
+        function add() {
+            let a = document.getElementById("t1").value;
+            names.push(a);
+            defaultlist();
+        }
+        function removename() {
+            let a = document.getElementById("t1").value;
+            for (var i = 0; i < names.length; i++) {
+                if (a == names[i]) {
+                    names.splice(i, 1);
+                    break;
+                }
+            }
+            defaultlist();
+        }
+        function addAtIndex() {
+            let index = parseInt(document.getElementById("n1").value);
+            let nameToAdd = document.getElementById("t1").value;
+
+            if (index >= 0 && index <= names.length) {
+                names.splice(index, 0, nameToAdd);
+                defaultList();
+            } else {
+                console.log("Invalid index.");
+            }
+        }
+        defaultlist();
+    </script>-->
+    <!--</body>-->
+    <!--<body>
+
+    <div id="d1"></div>
+    <script>-->
+    <!--// array objects
+    //var student = [
+
+
+    //    { id: 1, name: "Rohan", studrollno: 25 },
+    //    { id: 2, name: "Suraj", studrollno: 35 },
+    //    { id: 3, name: "Kishor", studrollno: 55 },
+    //    { id: 4, name: "Tushar", studrollno: 65 },
+    //    { id: 5, name: "Vivek", studrollno: 75 },
+    //    { id: 6, name: "Parth", studrollno: 85 }
+
+
+    //];
+    //var data = "<table border='1'><tr><td>Id</td><td>Name</td><td>Studrollno</td></tr>";
+    //for (var i = 0; i < student.length; i++) {
+    //    data += "<tr><td>" + student[i].id + "</td><td>" + student[i].name +
+    //        "</td><td>" + student[i].studrollno + "</td></tr>";
+    //}
+    //data += "</table>";
+    //document.getElementById("d1").innerHTML = data;
+
+
+    let promise = new Promise(function (resolve, reject) {
+        let req = new XMLHttpRequest();
+        req.open("GET", "https://.typicode.com/todos/");
+        req.onload = function () {
+            if (req.status == 200) { // status -->
+    <!--HTTP
+                resolve(req.response);
+            }
+            else {
+                reject("Server error");
+            }
+        };
+        req.send();
+    }); // close
+
+
+    //call the promise
+
+
+    promise.then(function (value) {
+        display(value)
+    },
+        function (error) {
+            displayerror(error)
+        }
+    );
+
+
+    function display(value) {
+        var data = "<table border='1'><tr><td>User Id</td><td>Id</td><td>Title</td><td>Completed</td></tr>";
+        var result = JSON.parse(value);
+        for (var i = 0; i < result.length; i++) {
+            data += "<tr><td>" + result[i].userId + "</td><td>" + result[i].id + "</td><td>" +
+                result[i].title + "</td><td>" + result[i].completed + "</td></tr>";
+        }
+        data += "</table>";
+        document.getElementById("d1").innerHTML = data;
+    }
+
+
+    function displayerror(error) {
+        document.getElementById("d1").innerHTML = error;
+    }-->
+    <!--</script-->
+    Enter a number:<input type="text" id="t1" /> <br />
+    Enter a number:<input type="text" id="t2" /> <br />
+    Result:<input type="text" id="t3" /> <br />
+    <input type="button" id="btn1" value="Addition" />
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+        <script>
+
+            src = "https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+            integrity = "sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+                crossorigin = "anonymous" ></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                //    var a = $('#t1').val();
+                //    var b = $('#t2').val();
+
+                //    var sum = parseInt(a) + parseInt(b);
+                //    $("#t3").val(sum);
+                //    $("#d1").text("Addition is " + sum); // (.text)  when we have to show only text we use this text syntax
+                //    $("#d2").html("<b> Addition is " + sum + "</b>");  // (.html) along with text we have to show any tag we use this html syntax
+                //})
+                src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" ></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+            integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+            crossorigin="anonymous"></script>
+    <script>
+
+
+        $(document).ready(function () {
+
+
+            $("#btn1").click(function () {
+                $.ajax('https://dummyjson.com/products/1',
+                    {
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function (value) {
+                            var data = "<table border='1'><tr><td>Id</td><td>Title</td><td>Description</td><td>Price</td><td>Image</td></tr>";
+                            data += "<tr><td>" + value.id + "</td><td>" + value.title + "</td><td>" +
+                                value.description + "</td><td>" + value.price +
+                                "</td><td><img src='" + value.thumbnail + "' height='200' width='300'/></td></tr>";
+                            data += "</table>";
+                            $("#d1").html(data);
+                        },
+                        error: function (error) {
+                            $("#d1").text("Server error" + error);
+                        }
+                    }
+
+
+                )
+            })
+
+        });
+
+    </script>
+</body>
+
+</html>

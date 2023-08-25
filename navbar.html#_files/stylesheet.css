@@ -1,0 +1,65 @@
+﻿
+.navbar{
+    background-color: #EC7063 !important;
+    
+}
+a {
+    color: white !important;
+}
+    a.navbar-brand {
+        color: #212F3D !important;
+        font-weight:bold;
+        font-size:20px;
+    }
+#carouselExampleIndicators{
+    position:relative;
+    top:60px;
+}
+.carousel-inner{
+    height:500px;
+}
+
+#productionlist {
+    position: relative;
+    top:80px;
+}
+#footer {
+    position: relative;
+    top:100px;
+    background: lightgrey;
+    height:300px;
+}
+
+#footer ul{
+    list-style:none;
+}
+
+#footer ul li{
+    font-weight:300;
+    font-size:18px;
+}
+
+#footer ul li a{
+    text-decoration:none;
+}
+
+    #footer ul li a:hover {
+        text-decoration:underline;
+    }
+
+    #footer .row{
+        position: relative;
+        top: 30px;
+    }
+
+.fa-whatsapp{
+    color:greenyellow;
+}
+
+.fa-instagram {
+    color: deepskyblue;
+}
+
+.fa-twitter {
+    color: blue;
+}

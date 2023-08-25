@@ -1,0 +1,28 @@
+﻿/*FOR LAPTOP*/
+
+h1{
+    font-size:70px;
+}
+p{
+    text-align:center;
+}
+
+/*FOR TABLET*/
+@media screen and (min-width:700px) and (max-width:1024px){
+    h1{
+    font-size:40px;
+    }
+}
+
+/*FOR MOBILE*/
+
+@media screen and (min-width:320px) and (max-width:680px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+

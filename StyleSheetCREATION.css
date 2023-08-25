@@ -1,0 +1,13 @@
+﻿.navbar {
+    background-color: #EC7063 !important;
+}
+
+a {
+    color: white !important;
+}
+
+    a.navbar-brand {
+        color: #212F3D !important;
+        font-weight: bold;
+        font-size: 20px;
+    }

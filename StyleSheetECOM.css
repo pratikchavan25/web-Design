@@ -1,0 +1,30 @@
+﻿.container {
+    margin-top: 100px;
+}
+
+.newarrival {
+    background-color: aqua;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.col-md-7 h2 {
+    color: green;
+}
+.btn2{
+   background-color: coral;
+}
+
+{
+    h1{
+    front-size: 40px;
+}
+
+    p{
+    text-align: center;
+}
+}
+
+

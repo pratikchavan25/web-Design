@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="stylesheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Products</a>
+                <ul class="submenu">
+                    <li><a href="#">BOAT</a></li>
+                    <li><a href="#">JBL</a></li>
+                    <li><a href="#">SONY</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.has-submenu').hover(
+            function() {
+                $(this).find('.submenu').slideDown(200);
+            },
+            function() {
+                $(this).find('.submenu').slideUp(200);
+            }
+        );
+    });
+    </script>
+
+</body>
+</html>
